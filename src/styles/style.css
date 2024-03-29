@@ -153,6 +153,33 @@ header nav a:hover {
     width: 50%;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  .text-overlay {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .text-overlay {
+    position: absolute;
+    top: 70%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .text-overlay {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
 
 .owl-nav {
   display: none;
