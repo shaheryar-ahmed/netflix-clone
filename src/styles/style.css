@@ -47,7 +47,7 @@ header nav a:hover {
 .main-movie {
   font-size: 16px;
   background-color: #000;
-  height: 800px;
+  height: 750px;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ header nav a:hover {
 }
 .text-overlay {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 30%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -74,7 +74,6 @@ header nav a:hover {
 }
 
 .main-movie .title-movie {
-  margin-top: 15%;
   font-size: 40px;
 }
 
@@ -115,6 +114,16 @@ header nav a:hover {
 
 .carousel-movie {
   margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-carousel.owl-drag .owl-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .baseboard {
@@ -131,10 +140,11 @@ header nav a:hover {
 .baseboard a {
   color: var(--color-text-primary);
 }
-.second-carousel {
+
+/* .second-carousel {
   margin-top: 40px;
   margin-bottom: 40px;
-}
+} */
 
 @media screen and (max-width: 700px) {
   header .container {
@@ -156,34 +166,65 @@ header nav a:hover {
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   .text-overlay {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 35%;
     transform: translate(-50%, -50%);
     z-index: 1;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
+  .title-movie {
+    font-size: 32px !important;
+  }
+  .description {
+    font-size: 16px !important;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .buttons button {
+    width: 150px;
+  }
   .text-overlay {
     position: absolute;
-    top: 70%;
-    left: 37%;
+    top: 75%;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 1;
   }
+  /* .item {
+    width: 100% !important;
+    height: 100% !important;
+  } */
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
+  .title-movie {
+    font-size: 28px !important;
+  }
+  .description {
+    font-size: 13px !important;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .buttons button {
+    width: 150px;
+  }
+
   .text-overlay {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 45%;
     transform: translate(-50%, -50%);
     z-index: 1;
   }
 }
-
+/* 
 .owl-nav {
   display: none;
 }
 .owl-dots {
   display: none;
-}
+} */
